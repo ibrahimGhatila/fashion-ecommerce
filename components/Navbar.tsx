@@ -1,4 +1,4 @@
-import { SearchIcon, BagIcon } from "./icons";
+import { SearchIcon, BagIcon, StarSpark } from "./icons";
 
 const links = ["Home", "Product", "Blog", "Contact Us"];
 
@@ -19,7 +19,7 @@ export default function Navbar() {
         </nav>
 
         <a href="#" className="flex items-center gap-1.5 font-serif text-2xl tracking-wide text-ink">
-          <span className="text-primary">✦</span>
+          <StarSpark className="h-4 w-4 text-primary" />
           <span>LUX</span>
         </a>
 

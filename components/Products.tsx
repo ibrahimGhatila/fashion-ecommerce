@@ -1,24 +1,12 @@
+import SmartImage from "./SmartImage";
+import { IMAGES } from "@/lib/images";
+
 const filters = ["All", "T-Shirt", "Shirt", "Pants", "Accessories"];
 
 const products = [
-  {
-    name: "Winter Coat",
-    category: "Coat",
-    price: "$144.99",
-    image: "/images/winter-coat.svg",
-  },
-  {
-    name: "Autumn Dress",
-    category: "Dress",
-    price: "$124.99",
-    image: "/images/autumn-dress.svg",
-  },
-  {
-    name: "Casual T-Shirt",
-    category: "T-Shirt",
-    price: "$39.99",
-    image: "/images/casual-tshirt.svg",
-  },
+  { name: "Winter Coat", category: "Coat", price: "$144.99", img: IMAGES.winterCoat },
+  { name: "Autumn Dress", category: "Dress", price: "$124.99", img: IMAGES.autumnDress },
+  { name: "Casual T-Shirt", category: "T-Shirt", price: "$39.99", img: IMAGES.casualTshirt },
 ];
 
 export default function Products() {
@@ -38,9 +26,7 @@ export default function Products() {
             <button
               key={filter}
               className={`rounded-full px-6 py-2 text-sm transition-colors ${
-                i === 0
-                  ? "bg-ink text-white"
-                  : "text-muted hover:text-ink"
+                i === 0 ? "bg-ink text-white" : "text-muted hover:text-ink"
               }`}
             >
               {filter}
@@ -52,9 +38,9 @@ export default function Products() {
           {products.map((product) => (
             <article key={product.name} className="group">
               <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-cream">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={product.image}
+                <SmartImage
+                  src={product.img.web}
+                  fallback={product.img.local}
                   alt={product.name}
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />

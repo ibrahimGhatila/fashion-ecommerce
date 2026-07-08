@@ -18,10 +18,20 @@ export function BagIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+/** Thin outlined 4-point sparkle — the design's signature decoration. */
+export function Sparkle(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1} {...props}>
+      <path d="M12 1.5c.7 5.6 4.9 9.8 10.5 10.5C16.9 12.7 12.7 16.9 12 22.5 11.3 16.9 7.1 12.7 1.5 12 7.1 11.3 11.3 7.1 12 1.5Z" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+/** Solid 4-point sparkle — used on the orange promo cards. */
 export function StarSpark(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 100 100" fill="currentColor" {...props}>
-      <path d="M50 0c3 27 20 44 47 50-27 6-44 23-47 50-3-27-20-44-47-50 27-6 44-23 47-50Z" />
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M12 1.5c.7 5.6 4.9 9.8 10.5 10.5C16.9 12.7 12.7 16.9 12 22.5 11.3 16.9 7.1 12.7 1.5 12 7.1 11.3 11.3 7.1 12 1.5Z" />
     </svg>
   );
 }

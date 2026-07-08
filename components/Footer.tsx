@@ -1,3 +1,5 @@
+import { StarSpark } from "./icons";
+
 const menu = ["Menu", "Women", "Order Tracking", "Blog"];
 const help = ["FAQ", "Privacy Policy", "Term Of Conditions"];
 const connect = ["Contact Us", "Instagram", "Facebook", "Twitter"];
@@ -10,7 +12,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2 lg:pr-10">
             <a href="#" className="flex items-center gap-1.5 font-serif text-2xl text-ink">
-              <span className="text-primary">✦</span>
+              <StarSpark className="h-4 w-4 text-primary" />
               <span>LUX</span>
             </a>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">

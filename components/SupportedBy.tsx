@@ -1,4 +1,11 @@
-const brands = ["ZARA", "Champion", "CHANEL", "FILA", "GUCCI", "GUESS"];
+const brands = [
+  { name: "ZARA", className: "font-serif text-3xl font-bold tracking-tight" },
+  { name: "Champion", className: "text-2xl font-semibold italic" },
+  { name: "CHANEL", className: "font-serif text-xl font-medium tracking-[0.35em]" },
+  { name: "FILA", className: "text-3xl font-extrabold italic tracking-tight" },
+  { name: "GUCCI", className: "font-serif text-2xl font-semibold tracking-[0.3em]" },
+  { name: "GUESS", className: "text-2xl font-bold tracking-[0.2em]" },
+];
 
 export default function SupportedBy() {
   return (
@@ -8,14 +15,14 @@ export default function SupportedBy() {
           We Are Supported By
         </h2>
 
-        <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:gap-x-16">
           {brands.map((brand) => (
-            <div
-              key={brand}
-              className="flex items-center justify-center rounded-xl border border-ink/10 py-6 text-lg font-semibold tracking-wide text-ink/70"
+            <span
+              key={brand.name}
+              className={`text-ink/45 transition-colors hover:text-ink ${brand.className}`}
             >
-              {brand}
-            </div>
+              {brand.name}
+            </span>
           ))}
         </div>
       </div>

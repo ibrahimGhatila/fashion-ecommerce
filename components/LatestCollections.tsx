@@ -1,4 +1,6 @@
-import { StarSpark } from "./icons";
+import { Sparkle, StarSpark } from "./icons";
+import SmartImage from "./SmartImage";
+import { IMAGES } from "@/lib/images";
 
 export default function LatestCollections() {
   return (
@@ -19,9 +21,9 @@ export default function LatestCollections() {
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
           {/* New Casual Style */}
-          <div className="relative flex overflow-hidden rounded-2xl bg-cream">
+          <div className="relative flex min-h-[360px] overflow-hidden rounded-2xl bg-cream">
             <div className="relative z-10 flex flex-col justify-center p-10">
-              <StarSpark className="absolute right-6 top-6 h-8 w-8 text-ink/10" />
+              <Sparkle className="absolute right-6 top-6 h-8 w-8 text-ink/20" />
               <h3 className="text-4xl font-semibold leading-none text-ink">
                 NEW
                 <br />
@@ -37,9 +39,9 @@ export default function LatestCollections() {
               </div>
             </div>
             <div className="relative ml-auto w-1/2 self-stretch">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/casual-style.svg"
+              <SmartImage
+                src={IMAGES.casualStyle.web}
+                fallback={IMAGES.casualStyle.local}
                 alt="Casual style model"
                 className="h-full w-full object-cover"
               />
@@ -55,9 +57,9 @@ export default function LatestCollections() {
                 <p className="mt-2 text-sm text-muted">Collection</p>
               </div>
               <div className="ml-auto h-32 w-32 shrink-0 overflow-hidden rounded-xl">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/images/spring-dating.svg"
+                <SmartImage
+                  src={IMAGES.springDating.web}
+                  fallback={IMAGES.springDating.local}
                   alt="Spring dating collection"
                   className="h-full w-full object-cover"
                 />
@@ -65,7 +67,7 @@ export default function LatestCollections() {
             </div>
 
             <div className="relative flex flex-col justify-center overflow-hidden rounded-2xl bg-primary p-8 text-white">
-              <StarSpark className="absolute right-8 top-1/2 h-24 w-24 -translate-y-1/2 text-white/20" />
+              <StarSpark className="absolute right-8 top-1/2 h-24 w-24 -translate-y-1/2 text-white/25" />
               <h3 className="text-4xl font-semibold leading-none">
                 GET
                 <br />
