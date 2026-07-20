@@ -7,7 +7,7 @@
  *
  * TODO: replace the placeholder below with CWSK Enterprises' real number.
  */
-export const ADMIN_WHATSAPP = "60123456789";
+export const ADMIN_WHATSAPP = "60192224457";
 
 export const BRAND_NAME = "CWSK Enterprises";
 

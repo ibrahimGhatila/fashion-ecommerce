@@ -8,24 +8,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Restrained brass accent — used sparingly so the batik prints lead.
+        // Blue accent drawn from the logo — used sparingly.
         primary: {
-          DEFAULT: "#9C7A45",
-          light: "#B79860",
-          dark: "#7E6236",
+          DEFAULT: "#1A6AC2",
+          light: "#3E8AD8",
+          dark: "#14559C",
         },
-        // Warm bone / ivory
+        // Near-white, whisper-cool neutrals
         cream: {
-          DEFAULT: "#F1ECE1",
-          light: "#F8F4EC",
-          dark: "#E6DDCC",
+          DEFAULT: "#F3F4F5",
+          light: "#FBFBFC",
+          dark: "#E8EAEC",
         },
-        // Warm near-black
+        // Deep navy-charcoal (echoes the logo's darks)
         ink: {
-          DEFAULT: "#1B1815",
-          soft: "#413B34",
+          DEFAULT: "#16202B",
+          soft: "#3B4652",
         },
-        muted: "#6F675C",
+        muted: "#6B7280",
       },
       fontFamily: {
         sans: ["var(--font-poppins)", "system-ui", "sans-serif"],
