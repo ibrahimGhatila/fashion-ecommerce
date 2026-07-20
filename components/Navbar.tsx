@@ -22,9 +22,9 @@ export default function Navbar() {
         <a href="#" aria-label="CWSK Enterprises — home" className="flex items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/logo.png"
+            src="/images/logo-trimmed.png"
             alt="CWSK Enterprises"
-            className="h-11 w-auto mix-blend-multiply"
+            className="h-12 w-auto mix-blend-multiply sm:h-14"
           />
         </a>
 

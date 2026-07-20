@@ -11,9 +11,9 @@ export default function Footer() {
           <div className="lg:col-span-2 lg:pr-10">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/logo.png"
+              src="/images/logo-trimmed.png"
               alt="CWSK Enterprises"
-              className="h-14 w-auto mix-blend-multiply"
+              className="h-16 w-auto mix-blend-multiply"
             />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted">
               Hand-crafted batik shirts for men, cut from a cotton–silk blend and
