@@ -2,42 +2,43 @@ import { QuoteMark } from "./icons";
 
 const testimonials = [
   {
-    text: "I recently purchased the most beautiful dress from this brand and I couldn't be happier with my purchase! The dress is made of high-quality materials and fits like a glove. The color is so vibrant and the cut is extremely flattering.",
-    name: "James Lipshutz",
+    text: "The fabric is unlike any shirt I own — it breathes like cotton but falls like silk. I've had endless compliments, and no two people have the same print.",
+    name: "Daniyal Rehman",
+    role: "Karachi",
   },
   {
-    text: "I absolutely love my new shoes! They are so comfortable and stylish at the same time. The quality is amazing and they have held up really well after multiple wears. I especially love the attention to detail in the design.",
-    name: "Giana Dokidis",
+    text: "You can feel the hand-work in it. The stitching, the weight, the way the colour sits in the cloth. This is a grown man's shirt, not a novelty print.",
+    name: "Omar Sheikh",
+    role: "Dubai",
   },
   {
-    text: "I've been using my new handbag for a few weeks now and I'm absolutely in love with it! The size is perfect - it's big enough to hold all of my essentials but not so big that it's cumbersome to carry around.",
-    name: "Jordyn Botosh",
+    text: "I bought one for a wedding and now I reach for it constantly. Knowing it's one of one makes it feel like something worth keeping.",
+    name: "Arjun Mehta",
+    role: "London",
   },
 ];
 
 export default function Testimonials() {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-24">
       <div className="container-lux">
-        <h2 className="text-center text-3xl font-semibold text-ink">
-          What our clients have to say!
-        </h2>
-        <p className="mt-3 text-center text-sm text-muted">
-          80+ Molestie hendrerit amet sapien volutpat.
-        </p>
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="eyebrow">In Their Words</p>
+          <h2 className="mt-4 font-serif text-4xl text-ink">Worn with confidence</h2>
+        </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-14 grid gap-6 md:grid-cols-3">
           {testimonials.map((item) => (
-            <figure
-              key={item.name}
-              className="rounded-2xl border border-ink/10 p-7"
-            >
+            <figure key={item.name} className="rounded-sm border border-ink/10 p-8">
               <QuoteMark className="h-6 w-6 text-primary" />
-              <blockquote className="mt-4 text-sm leading-relaxed text-ink-soft">
+              <blockquote className="mt-5 text-sm leading-relaxed text-ink-soft">
                 {item.text}
               </blockquote>
-              <figcaption className="mt-6 text-sm font-semibold text-ink">
-                {item.name}
+              <figcaption className="mt-7">
+                <p className="font-serif text-base text-ink">{item.name}</p>
+                <p className="mt-0.5 text-xs uppercase tracking-[0.15em] text-muted">
+                  {item.role}
+                </p>
               </figcaption>
             </figure>
           ))}

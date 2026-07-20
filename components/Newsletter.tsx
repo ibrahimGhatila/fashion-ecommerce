@@ -1,23 +1,30 @@
 export default function Newsletter() {
   return (
-    <section className="bg-white pb-20">
+    <section className="bg-white pb-24">
       <div className="container-lux">
-        <div className="rounded-2xl bg-cream px-6 py-14 text-center">
-          <h2 className="text-3xl font-semibold text-ink">
-            Subscribe Newsletter and Get $15 Off
+        <div className="rounded-sm bg-ink px-6 py-16 text-center text-cream-light">
+          <p className="text-xs font-medium uppercase tracking-[0.3em] text-primary-light">
+            The List
+          </p>
+          <h2 className="mx-auto mt-4 max-w-xl font-serif text-3xl leading-snug sm:text-4xl">
+            First access to new prints, before they sell out
           </h2>
-          <p className="mt-3 text-sm text-muted">
-            80+ Molestie hendrerit amet sapien volutpat.
+          <p className="mx-auto mt-4 max-w-md text-sm text-cream-light/70">
+            Each design is one of one. Join the list to see new arrivals first —
+            no noise, just the next shirt.
           </p>
 
-          <form className="mx-auto mt-8 flex max-w-md items-center gap-2 rounded-full bg-white p-1.5 shadow-card">
+          <form className="mx-auto mt-8 flex max-w-md items-center gap-2">
             <input
               type="email"
-              placeholder="Enter mail address"
-              className="w-full bg-transparent px-5 py-2 text-sm text-ink outline-none placeholder:text-muted"
+              placeholder="Your email address"
+              className="w-full rounded-sm border border-cream-light/25 bg-transparent px-5 py-3 text-sm text-cream-light outline-none placeholder:text-cream-light/40 focus:border-primary-light"
             />
-            <button type="submit" className="btn-primary shrink-0">
-              Subscribe
+            <button
+              type="submit"
+              className="shrink-0 rounded-sm bg-cream-light px-7 py-3 text-xs font-medium uppercase tracking-[0.15em] text-ink transition-colors hover:bg-white"
+            >
+              Join
             </button>
           </form>
         </div>

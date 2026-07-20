@@ -8,21 +8,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Restrained brass accent — used sparingly so the batik prints lead.
         primary: {
-          DEFAULT: "#E86642",
-          light: "#EE7B57",
-          dark: "#D8542F",
+          DEFAULT: "#9C7A45",
+          light: "#B79860",
+          dark: "#7E6236",
         },
+        // Warm bone / ivory
         cream: {
-          DEFAULT: "#F6F1EA",
-          light: "#FAF7F1",
-          dark: "#EFE8DD",
+          DEFAULT: "#F1ECE1",
+          light: "#F8F4EC",
+          dark: "#E6DDCC",
         },
+        // Warm near-black
         ink: {
-          DEFAULT: "#1C1B19",
-          soft: "#3A3A38",
+          DEFAULT: "#1B1815",
+          soft: "#413B34",
         },
-        muted: "#6E6C68",
+        muted: "#6F675C",
       },
       fontFamily: {
         sans: ["var(--font-poppins)", "system-ui", "sans-serif"],
@@ -32,7 +35,7 @@ const config: Config = {
         container: "1200px",
       },
       boxShadow: {
-        card: "0 10px 40px -12px rgba(0,0,0,0.12)",
+        card: "0 18px 50px -20px rgba(0,0,0,0.25)",
       },
     },
   },

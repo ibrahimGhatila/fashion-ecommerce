@@ -17,9 +17,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "LUX — Trendy Fashion Collection",
+  title: "LUX — Handcrafted Batik Shirts for Men",
   description:
-    "Finding your fashion has never been easier. Browse the best selection of famous fashion brands that suit your style and preferences.",
+    "Hand-crafted batik shirts for men, cut from a cotton–silk blend and dyed by artisans in Java. One print, one shirt.",
 };
 
 export default function RootLayout({

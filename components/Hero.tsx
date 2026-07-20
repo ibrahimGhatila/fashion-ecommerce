@@ -1,101 +1,74 @@
 "use client";
 
 import { motion } from "motion/react";
-import { Sparkle } from "./icons";
 import SmartImage from "./SmartImage";
 import { IMAGES } from "@/lib/images";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-const categories = ["Women", "Men", "Accessories", "Footwear", "Jewelry"];
-
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-cream-light">
-      <div className="container-lux grid items-center gap-10 pb-20 pt-8 lg:grid-cols-[1.1fr_1fr] lg:gap-12">
+    <section className="bg-cream-light">
+      <div className="container-lux grid min-h-[calc(100svh-65px)] items-center gap-10 py-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:py-0">
         {/* Left */}
         <motion.div
           initial={{ opacity: 0, y: 26 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: EASE }}
-          className="relative z-10 max-w-xl"
+          className="max-w-xl"
         >
-          <div className="flex items-center gap-2 text-xs font-medium uppercase tracking-[0.25em] text-primary">
-            <Sparkle className="h-4 w-4" />
-            Summer 2026 — New Collection
-          </div>
+          <p className="eyebrow">Handcrafted Batik · Est. Java</p>
 
-          <h1 className="mt-5 text-[2.75rem] leading-[0.98] tracking-tight text-ink sm:text-[4rem]">
-            <span className="block font-bold">TRENDY FASHION</span>
-            <span className="block font-light">COLLECTION</span>
+          <h1 className="mt-6 font-serif text-5xl leading-[1.05] text-ink sm:text-6xl">
+            Batik, Tailored
+            <br />
+            for the Modern Man
           </h1>
 
           <p className="mt-6 max-w-md text-sm leading-relaxed text-muted">
-            Finding your fashion has never been easier. Browse the best selection
-            of famous fashion brands that suit your style and preferences.
+            Hand-crafted shirts cut from a cotton–silk blend and dyed by artisans
+            using techniques passed down for generations. One print. One shirt.
+            Made to be worn, not repeated.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-6">
-            <a href="#products" className="btn-primary">
-              Shop Now
+          <div className="mt-9 flex flex-wrap items-center gap-5">
+            <a href="#collection" className="btn-primary">
+              Explore the Collection
             </a>
-            <div className="flex items-center gap-10">
-              <div>
-                <p className="text-2xl font-semibold text-ink">80+</p>
-                <p className="text-xs text-muted">Unique Style</p>
-              </div>
-              <div>
-                <p className="text-2xl font-semibold text-ink">40+</p>
-                <p className="text-xs text-muted">Brand Trusted</p>
-              </div>
-            </div>
+            <a href="#heritage" className="text-xs font-medium uppercase tracking-[0.15em] text-ink underline-offset-4 hover:underline">
+              Our Craft
+            </a>
           </div>
 
-          <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-2 border-t border-ink/10 pt-6 text-sm text-ink/70">
-            {categories.map((item, i) => (
-              <motion.li
-                key={item}
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 + i * 0.08, duration: 0.4, ease: EASE }}
-                whileHover={{ y: -3, color: "#E86642" }}
-              >
-                <a href="#products" className="cursor-pointer">
-                  {item}
-                </a>
-              </motion.li>
-            ))}
-          </ul>
+          <div className="mt-12 flex items-center gap-12 border-t border-ink/10 pt-8">
+            <div>
+              <p className="font-serif text-3xl text-ink">100%</p>
+              <p className="mt-1 text-xs uppercase tracking-[0.15em] text-muted">Hand-Dyed</p>
+            </div>
+            <div>
+              <p className="font-serif text-3xl text-ink">Cotton</p>
+              <p className="mt-1 text-xs uppercase tracking-[0.15em] text-muted">&amp; Silk Blend</p>
+            </div>
+            <div>
+              <p className="font-serif text-3xl text-ink">1 of 1</p>
+              <p className="mt-1 text-xs uppercase tracking-[0.15em] text-muted">Per Design</p>
+            </div>
+          </div>
         </motion.div>
 
-        {/* Right */}
+        {/* Right — image fills the frame, no matting */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
+          initial={{ opacity: 0, scale: 0.97 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, ease: EASE }}
-          className="relative"
+          className="mx-auto h-[58svh] max-h-[560px] min-h-[380px] w-full max-w-[440px] overflow-hidden rounded-sm shadow-card"
         >
-          {/* soft glow */}
-          <div className="absolute -left-10 -top-10 -z-10 h-72 w-72 rounded-full bg-primary/25 blur-3xl" />
-          <div className="absolute -bottom-10 right-0 -z-10 h-64 w-64 rounded-full bg-[#f6c9b4]/40 blur-3xl" />
-
-          <Sparkle className="absolute -left-2 top-8 z-10 h-8 w-8 text-primary" />
-          <Sparkle className="absolute right-4 top-0 z-10 h-10 w-10 text-ink/20" />
-          <Sparkle className="absolute bottom-10 right-1 z-10 h-7 w-7 text-primary/70" />
-
-          <motion.div
-            initial={{ y: 12 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 1, ease: EASE }}
-            className="relative mx-auto flex aspect-[3/4] w-full max-w-[420px] items-center justify-center overflow-hidden rounded-[1.75rem] bg-cream shadow-2xl"
-          >
-            <SmartImage
-              src={IMAGES.hero.web}
-              fallback={IMAGES.hero.local}
-              alt="Model wearing a LUX printed shirt"
-              className="h-full w-full object-contain"
-            />
-          </motion.div>
+          <SmartImage
+            src={IMAGES.hero}
+            fallback={IMAGES.fallback}
+            alt="Model wearing a LUX handcrafted batik shirt"
+            className="h-full w-full object-cover object-top"
+          />
         </motion.div>
       </div>
     </section>

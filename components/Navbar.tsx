@@ -1,26 +1,26 @@
-import { SearchIcon, BagIcon, StarSpark } from "./icons";
+import { SearchIcon, BagIcon } from "./icons";
 
-const links = ["Home", "Product", "Blog", "Contact Us"];
+const links = [
+  { label: "Shop", href: "#collection" },
+  { label: "Heritage", href: "#heritage" },
+  { label: "Journal", href: "#journal" },
+  { label: "Contact", href: "#footer" },
+];
 
 export default function Navbar() {
   return (
-    <header className="w-full bg-cream-light">
-      <div className="container-lux flex items-center justify-between py-5">
-        <nav className="hidden items-center gap-8 text-sm text-ink md:flex">
+    <header className="sticky top-0 z-50 w-full border-b border-ink/10 bg-cream-light/90 backdrop-blur">
+      <div className="container-lux flex items-center justify-between py-4">
+        <nav className="hidden items-center gap-8 text-xs font-medium uppercase tracking-[0.15em] text-ink/80 md:flex">
           {links.map((link) => (
-            <a
-              key={link}
-              href="#"
-              className="transition-colors hover:text-primary"
-            >
-              {link}
+            <a key={link.label} href={link.href} className="transition-colors hover:text-primary">
+              {link.label}
             </a>
           ))}
         </nav>
 
-        <a href="#" className="flex items-center gap-1.5 font-serif text-2xl tracking-wide text-ink">
-          <StarSpark className="h-4 w-4 text-primary" />
-          <span>LUX</span>
+        <a href="#" className="font-serif text-2xl tracking-[0.35em] text-ink">
+          LUX
         </a>
 
         <div className="flex items-center gap-5">
@@ -30,8 +30,11 @@ export default function Navbar() {
           <button aria-label="Cart" className="text-ink transition-colors hover:text-primary">
             <BagIcon className="h-5 w-5" />
           </button>
-          <a href="#" className="rounded-full border border-primary px-6 py-2 text-sm text-primary transition-colors hover:bg-primary hover:text-white">
-            Login
+          <a
+            href="#"
+            className="hidden rounded-sm border border-ink/40 px-5 py-2 text-xs font-medium uppercase tracking-[0.15em] text-ink transition-colors hover:bg-ink hover:text-cream-light sm:inline-flex"
+          >
+            Account
           </a>
         </div>
       </div>

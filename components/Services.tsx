@@ -2,46 +2,38 @@ import { ReturnIcon, ShieldIcon, TruckIcon } from "./icons";
 
 const services = [
   {
+    icon: TruckIcon,
+    title: "Worldwide Delivery",
+    text: "Insured, tracked shipping on every order, carefully packed to protect the cloth in transit.",
+  },
+  {
     icon: ReturnIcon,
-    title: "Free Returns",
-    text: "Our customers can return or exchange their purchases hassle-free, with our easy to use return policy.",
+    title: "30-Day Returns",
+    text: "Not the right fit? Return or exchange any unworn shirt within 30 days, no questions asked.",
   },
   {
     icon: ShieldIcon,
-    title: "Secure Payment",
-    text: "We offer a secure checkout that protects our customers' personal and financial information.",
-  },
-  {
-    icon: TruckIcon,
-    title: "Customer Support",
-    text: "Our customer support team is available to help customers with any questions or concerns they may have, ensuring a seamless and stress-free shopping experience.",
+    title: "Secure Checkout",
+    text: "Encrypted payments and a private, straightforward checkout — your details stay yours.",
   },
 ];
 
 export default function Services() {
   return (
-    <section className="bg-white py-20">
+    <section className="border-t border-ink/10 bg-white py-20">
       <div className="container-lux">
-        <div className="grid gap-10 md:grid-cols-[1fr_2fr]">
-          <div>
-            <h2 className="text-3xl font-semibold text-ink">Our Services</h2>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
-              We understand the importance of a seamless and enjoyable shopping
-              experience.
-            </p>
-          </div>
-
-          <div className="grid gap-8 sm:grid-cols-3">
-            {services.map((service) => (
-              <div key={service.title}>
-                <service.icon className="h-9 w-9 text-primary" />
-                <h3 className="mt-4 font-semibold text-ink">{service.title}</h3>
-                <p className="mt-2 text-xs leading-relaxed text-muted">
+        <div className="grid gap-12 md:grid-cols-3">
+          {services.map((service) => (
+            <div key={service.title} className="flex gap-5">
+              <service.icon className="h-8 w-8 shrink-0 text-primary" />
+              <div>
+                <h3 className="font-serif text-lg text-ink">{service.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">
                   {service.text}
                 </p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

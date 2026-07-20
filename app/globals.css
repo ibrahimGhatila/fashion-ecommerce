@@ -21,13 +21,17 @@ body {
   .container-lux {
     @apply mx-auto w-full max-w-container px-5 sm:px-8;
   }
+  /* Premium: solid ink buttons, squared-off, letter-spaced */
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-full bg-primary px-7 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-dark;
+    @apply inline-flex items-center justify-center rounded-sm bg-ink px-8 py-3.5 text-xs font-medium uppercase tracking-[0.15em] text-cream-light transition-colors hover:bg-black;
   }
   .btn-outline {
-    @apply inline-flex items-center justify-center rounded-full border border-primary px-7 py-3 text-sm font-medium text-primary transition-colors hover:bg-primary hover:text-white;
+    @apply inline-flex items-center justify-center rounded-sm border border-ink/40 px-8 py-3.5 text-xs font-medium uppercase tracking-[0.15em] text-ink transition-colors hover:bg-ink hover:text-cream-light;
   }
   .btn-dark {
-    @apply inline-flex items-center justify-center rounded-full bg-ink px-7 py-3 text-sm font-medium text-white transition-colors hover:bg-black;
+    @apply inline-flex items-center justify-center rounded-sm bg-ink px-8 py-3.5 text-xs font-medium uppercase tracking-[0.15em] text-cream-light transition-colors hover:bg-black;
+  }
+  .eyebrow {
+    @apply text-xs font-medium uppercase tracking-[0.3em] text-primary;
   }
 }
