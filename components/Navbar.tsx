@@ -19,8 +19,13 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <a href="#" className="font-serif text-2xl tracking-[0.35em] text-ink">
-          LUX
+        <a href="#" aria-label="CWSK Enterprises — home" className="flex items-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/logo.png"
+            alt="CWSK Enterprises"
+            className="h-11 w-auto mix-blend-multiply"
+          />
         </a>
 
         <div className="flex items-center gap-5">

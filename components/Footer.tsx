@@ -1,7 +1,7 @@
 const shop = ["All Shirts", "New Arrivals", "Order Tracking", "Size Guide"];
 const about = ["Our Heritage", "The Journal", "Fabric &amp; Care", "Contact"];
 const help = ["FAQ", "Shipping &amp; Returns", "Privacy Policy", "Terms"];
-const payments = ["PayPal", "Apple Pay", "Mastercard", "Visa"];
+const payments = ["Touch 'n Go", "Visa"];
 
 export default function Footer() {
   return (
@@ -9,9 +9,12 @@ export default function Footer() {
       <div className="container-lux">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2 lg:pr-10">
-            <a href="#" className="font-serif text-2xl tracking-[0.35em] text-ink">
-              LUX
-            </a>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/logo.png"
+              alt="CWSK Enterprises"
+              className="h-14 w-auto mix-blend-multiply"
+            />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted">
               Hand-crafted batik shirts for men, cut from a cotton–silk blend and
               dyed by artisans in Java. One print, one shirt — made to be worn for
@@ -26,7 +29,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-6 border-t border-ink/10 pt-8 md:flex-row">
           <p className="order-2 text-xs text-muted md:order-1">
-            © 2026 LUX. All rights reserved.
+            © 2026 CWSK Enterprises. All rights reserved.
           </p>
           <div className="order-1 flex items-center gap-3 md:order-2">
             {payments.map((item) => (

@@ -66,7 +66,7 @@ export default function Hero() {
           <SmartImage
             src={IMAGES.hero}
             fallback={IMAGES.fallback}
-            alt="Model wearing a LUX handcrafted batik shirt"
+            alt="Model wearing a CWSK Enterprises handcrafted batik shirt"
             className="h-full w-full object-cover object-top"
           />
         </motion.div>

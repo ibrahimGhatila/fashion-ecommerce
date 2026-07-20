@@ -17,7 +17,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "LUX — Handcrafted Batik Shirts for Men",
+  title: "CWSK Enterprises — Handcrafted Batik Shirts for Men",
   description:
     "Hand-crafted batik shirts for men, cut from a cotton–silk blend and dyed by artisans in Java. One print, one shirt.",
 };
