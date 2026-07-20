@@ -4,9 +4,9 @@ import { IMAGES } from "@/lib/images";
 const filters = ["All", "T-Shirt", "Shirt", "Pants", "Accessories"];
 
 const products = [
-  { name: "Winter Coat", category: "Coat", price: "$144.99", img: IMAGES.winterCoat },
-  { name: "Autumn Dress", category: "Dress", price: "$124.99", img: IMAGES.autumnDress },
-  { name: "Casual T-Shirt", category: "T-Shirt", price: "$39.99", img: IMAGES.casualTshirt },
+  { name: "Crimson Batik Shirt", category: "Shirt", price: "$59.99", img: IMAGES.winterCoat },
+  { name: "Olive Aztec Shirt", category: "Shirt", price: "$64.99", img: IMAGES.autumnDress },
+  { name: "Indigo Bloom Shirt", category: "Shirt", price: "$54.99", img: IMAGES.casualTshirt },
 ];
 
 export default function Products() {
@@ -37,12 +37,12 @@ export default function Products() {
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {products.map((product) => (
             <article key={product.name} className="group">
-              <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-cream">
+              <div className="flex aspect-[3/4] items-center justify-center overflow-hidden rounded-2xl bg-cream">
                 <SmartImage
                   src={product.img.web}
                   fallback={product.img.local}
                   alt={product.name}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
                 />
               </div>
               <div className="mt-4 flex items-center justify-between">

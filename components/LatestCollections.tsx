@@ -38,12 +38,12 @@ export default function LatestCollections() {
                 </a>
               </div>
             </div>
-            <div className="relative ml-auto w-1/2 self-stretch">
+            <div className="relative ml-auto flex w-1/2 items-end justify-center self-stretch bg-cream-dark">
               <SmartImage
                 src={IMAGES.casualStyle.web}
                 fallback={IMAGES.casualStyle.local}
-                alt="Casual style model"
-                className="h-full w-full object-cover"
+                alt="Model wearing a LUX printed shirt"
+                className="h-full w-full object-contain"
               />
             </div>
           </div>
@@ -56,12 +56,12 @@ export default function LatestCollections() {
                 <h3 className="text-3xl font-semibold text-ink">DATING</h3>
                 <p className="mt-2 text-sm text-muted">Collection</p>
               </div>
-              <div className="ml-auto h-32 w-32 shrink-0 overflow-hidden rounded-xl">
+              <div className="ml-auto flex h-40 w-28 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-cream-dark">
                 <SmartImage
                   src={IMAGES.springDating.web}
                   fallback={IMAGES.springDating.local}
-                  alt="Spring dating collection"
-                  className="h-full w-full object-cover"
+                  alt="Spring collection shirt"
+                  className="h-full w-full object-contain"
                 />
               </div>
             </div>

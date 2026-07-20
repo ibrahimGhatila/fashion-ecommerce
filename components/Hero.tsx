@@ -87,13 +87,13 @@ export default function Hero() {
             initial={{ y: 12 }}
             animate={{ y: 0 }}
             transition={{ duration: 1, ease: EASE }}
-            className="relative mx-auto aspect-[4/5] w-full max-w-[460px] overflow-hidden rounded-[1.75rem] shadow-2xl"
+            className="relative mx-auto flex aspect-[3/4] w-full max-w-[420px] items-center justify-center overflow-hidden rounded-[1.75rem] bg-cream shadow-2xl"
           >
             <SmartImage
               src={IMAGES.hero.web}
               fallback={IMAGES.hero.local}
-              alt="Fashion model in a trendy outfit"
-              className="h-full w-full object-cover brightness-[1.03]"
+              alt="Model wearing a LUX printed shirt"
+              className="h-full w-full object-contain"
             />
           </motion.div>
         </motion.div>

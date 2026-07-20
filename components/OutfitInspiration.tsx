@@ -33,13 +33,13 @@ export default function OutfitInspiration() {
                 STYLE
               </h3>
             </div>
-            <div className="absolute inset-y-0 right-0 w-1/2">
+            <div className="absolute inset-y-0 right-0 flex w-1/2 items-end justify-center bg-cream-dark">
               <Sparkle className="absolute -left-5 top-8 z-10 h-9 w-9 text-ink/25" />
               <SmartImage
                 src={IMAGES.outfit.web}
                 fallback={IMAGES.outfit.local}
-                alt="New casual style outfit"
-                className="h-full w-full object-cover"
+                alt="Outfit of the day shirt"
+                className="h-full w-full object-contain"
               />
             </div>
           </div>
