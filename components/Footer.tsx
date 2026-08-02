@@ -1,4 +1,4 @@
-const shop = ["All Shirts", "New Arrivals", "Order Tracking", "Size Guide"];
+const shop = ["Batik Pawang", "All Shirts", "Order Tracking", "Size Guide"];
 const about = ["Our Heritage", "The Journal", "Fabric &amp; Care", "Contact"];
 const help = ["FAQ", "Shipping &amp; Returns", "Privacy Policy", "Terms"];
 const payments = ["Touch 'n Go", "Visa"];
