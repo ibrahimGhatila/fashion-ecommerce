@@ -1,0 +1,24 @@
+{
+  "services": [
+    {
+      "icon": "qr",
+      "title": "Order on WhatsApp",
+      "text": "Check out in a few taps — we reply with a secure QR."
+    },
+    {
+      "icon": "needle",
+      "title": "Stitched to Size",
+      "text": "Take it as uncut fabric, or tailored to your size."
+    },
+    {
+      "icon": "truck",
+      "title": "Worldwide Delivery",
+      "text": "Insured, tracked shipping, packed with care."
+    },
+    {
+      "icon": "return",
+      "title": "30-Day Returns",
+      "text": "Return or exchange unworn items within 30 days."
+    }
+  ]
+}

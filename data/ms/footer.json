@@ -1,0 +1,20 @@
+{
+  "statement": "Batik buatan tangan untuk lelaki, dicelup oleh tukang batik di Malaysia. Satu corak, satu helai — untuk dipakai bertahun-tahun.",
+  "columns": [
+    {
+      "title": "Syarikat",
+      "links": [
+        { "label": "Tentang Kami" },
+        { "label": "Jurnal" },
+        { "label": "Hubungi" }
+      ]
+    },
+    {
+      "title": "Bantuan",
+      "links": [
+        { "label": "Soalan Lazim" },
+        { "label": "Polisi Kedai" }
+      ]
+    }
+  ]
+}
